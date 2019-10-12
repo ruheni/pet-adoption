@@ -7,13 +7,19 @@
 		"format": "prettier --write \"src/**/*.{js,jsx}\"",
 		"lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
 		"dev": "parcel src/index.html",
+		"dev:mock": "cross-env PET_MOCK=mock npm run dev",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
 	"author": "ruheni alex",
 	"license": "ISC",
 	"devDependencies": {
+		"@babel/core": "^7.6.4",
+		"@babel/plugin-proposal-class-properties": "^7.5.5",
+		"@babel/preset-env": "^7.6.3",
+		"@babel/preset-react": "^7.6.3",
 		"babel-eslint": "^10.0.3",
+		"cross-env": "^6.0.3",
 		"eslint": "^6.5.1",
 		"eslint-config-prettier": "^6.4.0",
 		"eslint-plugin-import": "^2.18.2",
@@ -26,6 +32,7 @@
 	"dependencies": {
 		"@frontendmasters/pet": "^1.0.3",
 		"react": "^16.10.2",
-		"react-dom": "^16.10.2"
+		"react-dom": "^16.10.2",
+		"react-router-dom": "^5.1.2"
 	}
 }
