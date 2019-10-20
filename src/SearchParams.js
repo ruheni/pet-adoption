@@ -68,8 +68,11 @@ const SearchParams = () => {
 					Theme
 					<select
 						id="Theme"
+						// @ts-ignore
 						value={theme}
+						// @ts-ignore
 						onChange={e => setTheme(e.target.value)}
+						// @ts-ignore
 						onBlur={e => setTheme(e.target.value)}
 					>
 						<option value="peru">Peru</option>

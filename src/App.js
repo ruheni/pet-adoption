@@ -7,7 +7,7 @@ import Details from "./Details";
 import ThemeContext from "./Themecontext";
 
 const App = () => {
-	const themeHook = useState("#2C3A47");
+	const themeHook = useState("peru");
 
 	return (
 		<React.StrictMode>
